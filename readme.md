@@ -13,3 +13,11 @@ To upload to Docker Hub I needed to push to create a new repo. This is done via.
 ```
 docker push dave5577/pyhelloflask101
 ```
+
+You can test the simple webapp is working by using curl from CLI which is handy when running the VM in GCS.
+
+```
+curl http://localhost:8888
+```
+
+it should return the text provided in server.py running on the instance.
