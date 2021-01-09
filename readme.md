@@ -21,3 +21,23 @@ curl http://localhost:8888
 ```
 
 it should return the text provided in server.py running on the instance.
+
+##To upload an image...
+
+Use guide below - very clear and easy to follow...
+
+https://docs.docker.com/get-started/04_sharing_app/
+
+1. First log in using docker login -u dave5577[username]
+
+2. You then need to tag the local image which doesn't seem to work until you log in first. Once you're logged in run this for this particular example
+
+```
+docker tag pyhelloflask101 dave5577/pyhelloflask101
+```
+
+3. Now you can push to docker hub using the following
+
+```
+docker push dave5577/pyhelloflask101
+```
