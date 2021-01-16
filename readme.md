@@ -48,3 +48,17 @@ docker tag pyhelloflask101 dave5577/pyhelloflask101
 ```
 docker push dave5577/pyhelloflask101
 ```
+
+##To pull a docker image
+
+First set up docker on the VM
+
+```
+sudo apt-get install docker
+```
+
+This seemed to work but doesn't seem to allow running docker.
+
+```
+docker pull HOSTNAME/PROJECT-ID/IMAGE:TAG
+```
