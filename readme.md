@@ -51,7 +51,9 @@ docker push dave5577/pyhelloflask101
 
 ##To pull a docker image
 
-First set up docker on the VM
+First set up docker on the VM - this guide should be used for Debian.
+
+https://docs.docker.com/engine/install/debian/
 
 ```
 sudo apt-get install docker
