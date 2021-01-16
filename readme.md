@@ -6,6 +6,20 @@ HelloWorld.py will simply run when called but will include a module to prove I c
 This guide on docker blogs is pretty clear.
 https://www.docker.com/blog/containerized-python-development-part-1/
 
+To run the webapp test container as a test on windows I went to CLI and entered the following -
+
+```
+docker run -p 8888:5000 pyhelloflask101
+```
+
+You can also test without a browser by using curl from CLI which is handy when running the VM in GCS.
+
+```
+curl http://localhost:8888
+```
+
+it should return the text provided in server.py running on the instance.
+
 The previous link only gets you so far...
 
 To upload to Docker Hub I needed to push to create a new repo. This is done via...
@@ -14,13 +28,6 @@ To upload to Docker Hub I needed to push to create a new repo. This is done via.
 docker push dave5577/pyhelloflask101
 ```
 
-You can test the simple webapp is working by using curl from CLI which is handy when running the VM in GCS.
-
-```
-curl http://localhost:8888
-```
-
-it should return the text provided in server.py running on the instance.
 
 ##To upload an image...
 
