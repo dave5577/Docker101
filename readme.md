@@ -74,3 +74,9 @@ This seemed to work but doesn't seem to allow running docker.
 ```
 docker pull HOSTNAME/PROJECT-ID/IMAGE:TAG
 ```
+
+#Start Docker at Boot
+Run one of the following:
+
+sudo chkconfig docker on
+sudo systemctl enable docker
