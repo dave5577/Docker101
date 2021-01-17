@@ -55,6 +55,12 @@ First set up docker on the VM - this guide should be used for Debian.
 
 https://docs.docker.com/engine/install/debian/
 
+Remove any instance first for a clean install
+
+```
+sudo apt-get remove docker docker-engine docker.io containerd runc
+```
+
 I'm running - Linux wordpress-1-vm 4.9.0-9-amd64 #1 SMP Debian 4.9.168-1+deb9u5 (2019-08-11) x86_64 GNU/Linux
 
 use: uname -a to find architecture version.
