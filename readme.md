@@ -71,6 +71,29 @@ sudo apt-get install docker
 
 This seemed to work but doesn't seem to allow running docker.
 
+Troubleshooting - I discovered that I had the wrong linux distro mentioned in ....
+
+therefore; the wrong dependancies were called when installing docker using
+
+```
+sudo apt-get install docker-ce
+```
+
+To fix edited the file /etc/apt/sources.list to remove all lines calling for ubuntu and made sure the following was present - deb [arch=amd64] https://download.docker.com/linux/debian stretch stable
+
+
+
+#Run Docker Hello World to test working install
+
+Docker allows testing using hello world which is pulled from the relevant repo automatically if not found.
+
+Use the command below to run it.
+
+```
+sudo docker run hello-world
+```
+
+
 ```
 docker pull HOSTNAME/PROJECT-ID/IMAGE:TAG
 ```
